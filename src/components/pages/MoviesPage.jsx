@@ -18,7 +18,6 @@ class MoviesPage extends Component {
   componentDidMount() {
     GetMovies()
       .then(res => {
-        console.log(res.data);
         this.setState({
           loader: true,
           moviesList: res.data.results,
